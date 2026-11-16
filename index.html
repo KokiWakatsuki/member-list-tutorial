@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web 開発入門</title>
+<style>
+/* 白地に濃い文字．色はカラーユニバーサルデザイン推奨配色セット ver.4 */
+:root{--bg:#EEF1F5;--panel:#FFFFFF;--ink:#1F2328;--sub:#4B5563;--line:#C8C8CB;--ao:#005AFF;--ao-bg:#E8F0FF;
+  --sans:"Hiragino Sans","Hiragino Kaku Gothic ProN","BIZ UDPGothic","Yu Gothic UI","Meiryo",sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7;padding:32px 16px 56px}
+main{max-width:760px;margin:0 auto}
+h1{font-size:28px;margin:0 0 6px}
+.lead{color:var(--sub);margin:0 0 28px}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+li{background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:14px 18px;display:grid;grid-template-columns:44px 1fr;gap:4px 14px;align-items:center}
+.no{grid-row:span 2;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--line);color:var(--sub);font-weight:700}
+.t{font-weight:700;font-size:17px}
+.m{display:flex;flex-wrap:wrap;gap:8px}
+.m a{display:inline-block;background:var(--ao);color:#fff;text-decoration:none;font-weight:700;border-radius:8px;padding:5px 14px}
+.m a:hover{background:#0047CC}
+.m a:focus-visible{outline:3px solid #BE8300;outline-offset:2px}
+.m span{color:var(--sub);font-size:14px}
+li.ready{border-color:var(--ao)}
+li.ready .no{border-color:var(--ao);background:var(--ao);color:#fff}
+footer{margin-top:28px;color:var(--sub);font-size:14px}
+footer a{color:var(--ao)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Web 開発入門</h1>
+  <p class="lead">メンバー名簿のページを作りながら，アプリがどうできているかを学びます．全10回．</p>
+  <ol>
+    <li class="ready"><span class="no">1</span><span class="t">目標を立てる・パソコンを確かめる</span><span class="m"><a href="01/pc-setup.html">パソコンの準備</a></span></li>
+    <li><span class="no">2</span><span class="t">アプリの地図</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">3</span><span class="t">画面の正体</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">4</span><span class="t">変更を記録して共有する</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">5</span><span class="t">提案して取り込む</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">6</span><span class="t">どのパソコンでも同じに動かす</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">7</span><span class="t">部品で画面を作る</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">8</span><span class="t">データと画面を分ける</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">9</span><span class="t">要望を分ける</span><span class="m"><span>準備中</span></span></li>
+    <li><span class="no">10</span><span class="t">提案を確かめる</span><span class="m"><span>準備中</span></span></li>
+  </ol>
+  <footer>作るアプリの出発点と手本：<a href="https://github.com/KokiWakatsuki/member-list-tutorial">GitHub のリポジトリ</a>（<code>main</code> が出発点，<code>step-</code> で始まるブランチが各ステップの手本）</footer>
+</main>
+</body>
+</html>
